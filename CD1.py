@@ -22,10 +22,9 @@ explanation_file_path="QueriesDescription.txt"
 # OpenAI API setup
 
 API_KEYS = [
-    os.environ.get('OPENAI_API_KEY'),
-    os.environ.get('OPENAI_API_KEY_2'),
-    os.environ.get('OPENAI_API_KEY_3'),
-   
+    st.secrets["OPENAI_API_KEY"],
+    st.secrets["OPENAI_API_KEY_2"],
+    st.secrets["OPENAI_API_KEY_3"],
 ]
     
 MODELS = ["gpt-4o", "gpt-4o","gpt-4o"]
