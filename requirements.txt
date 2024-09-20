@@ -5,3 +5,4 @@ openai==1.46.1
 pandas==1.5.3
 streamlit==1.36.0
 numpy==1.26.4
+uuid
