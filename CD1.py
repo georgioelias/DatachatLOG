@@ -32,10 +32,12 @@ MODELS = ["gpt-4o", "gpt-4o","gpt-4o"]
 
 # Google Sheets API setup
 def authenticate_google_sheets():
-    scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+    # Set up the Google Sheets API
+    credentials = st.secrets["gcp_service_account"]
+    scope = ["https://spreadsheets.google.com/feeds", 'https://www.googleapis.com/auth/spreadsheets',
+             "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
     
-    # Use the service account credentials for authentication
-    creds = ServiceAccountCredentials.from_json_keyfile_name(st.secrets["gcp_service_account"], scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials, scope)
     client = gspread.authorize(creds)
     
     # Open the sheet (replace 'Your Google Sheet Name' with your actual sheet name)
