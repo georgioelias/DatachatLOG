@@ -19,6 +19,7 @@ DB_NAME = 'data.db'
 FIXED_TABLE_NAME = "uploaded_data"
 csv_file_path = "Data18sep.csv"
 explanation_file_path= "QueriesDescription.txt"
+gcreds = st.secrets["gcp_service_account"]
 # OpenAI API setup
 
 API_KEYS = [
@@ -32,17 +33,15 @@ MODELS = ["gpt-4o", "gpt-4o","gpt-4o"]
 
 # Google Sheets API setup
 def authenticate_google_sheets():
-    # Set up the Google Sheets API
-    credentials = st.secrets["gcp_service_account"]
-    scope = ["https://spreadsheets.google.com/feeds", 'https://www.googleapis.com/auth/spreadsheets',
-             "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
-    
-    creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials, scope)
+    scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+    # Use the service account credentials for authentication
+    creds = ServiceAccountCredentials.from_json_keyfile_name(gcreds, scope)
     client = gspread.authorize(creds)
     
     # Open the sheet (replace 'Your Google Sheet Name' with your actual sheet name)
     sheet = client.open('ChatData LOG').sheet1
     return sheet
+
 
 def append_to_google_sheet(chat_id, user_input, json_answer, sql_query, gpt_response):
     sheet = authenticate_google_sheets()
