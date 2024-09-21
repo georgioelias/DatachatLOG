@@ -20,6 +20,7 @@ FIXED_TABLE_NAME = "uploaded_data"
 csv_file_path = "Data18sep.csv"
 explanation_file_path= "QueriesDescription.txt"
 gcreds = st.secrets["gcp_service_account"]
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
 # OpenAI API setup
 
 API_KEYS = [
@@ -33,7 +34,6 @@ MODELS = ["gpt-4o", "gpt-4o","gpt-4o"]
 
 # Google Sheets API setup
 def authenticate_google_sheets():
-    scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
     # Use the service account credentials for authentication
     creds = ServiceAccountCredentials.from_json_keyfile_name(gcreds, scope)
     client = gspread.authorize(creds)
