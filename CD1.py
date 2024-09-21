@@ -18,7 +18,7 @@ from datetime import datetime
 DB_NAME = 'data.db'
 FIXED_TABLE_NAME = "uploaded_data"
 csv_file_path = "Data18sep.csv"
-explanation_file_path="QueriesDescription.txt"
+explanation_file_path= "QueriesDescription.txt"
 # OpenAI API setup
 
 API_KEYS = [
