@@ -35,7 +35,7 @@ def authenticate_google_sheets():
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
     
     # Use the service account credentials for authentication
-    creds = ServiceAccountCredentials.from_json_keyfile_name('chatwithyourdata-bb19722d56e7.json', scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name(st.secrets["gcp_service_account"], scope)
     client = gspread.authorize(creds)
     
     # Open the sheet (replace 'Your Google Sheet Name' with your actual sheet name)
