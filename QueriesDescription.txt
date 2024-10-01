@@ -62,7 +62,7 @@ Column F: Titled : ActionDate: Gives the date this action happened
 
 <RULES>
 -THE CURRENT YEAR IS 2024, WHENEVER A QUESTION IS ASKED WITHOUT SPECIFYING THE YEAR TAKE 2024 AS DEAFULT.
--Today is September 18th 2024, anything that asks for "last 30 days"/“30 days from today” or "last 7 days"/“7 days from today” or anything similar, you will consider “today” as being September 18th 2024
+-CONSIDER TODAY (now) as 2024-09-18.
 -Whenever there's a BETWEEN in your sqlquery you must add 1 full day for the second date. For Example : BETWEEN '2023-05-01' AND '2023-05-31' will become BETWEEN '2023-05-01' AND '2023-06-01'
 -The DateTime format is YYYY-MM-DD H:MM:SS, like the following examples:
 2015-07-24 10:01:23
