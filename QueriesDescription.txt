@@ -1,4 +1,5 @@
-﻿Column A: titled: ActionType
+<DATA EXPLANATION>﻿
+Column A: titled: ActionType
 This Column gives the type of action that we are tracking could have one of the following values:
 Placements which represent the new sales that led to a contract signed
 Live-in Cancellations Retracted: represent the live-in Contracts planned to be canceled and retracted the cancellation 
@@ -55,28 +56,25 @@ gives a unique number to the entity mentioned in IDType column
 
 
 Column F: Titled : ActionDate: Gives the date this action happened  
+</.DATA EXPLANATION>﻿
 
 
 
-
-NOTE:
+<RULES>
 -THE CURRENT YEAR IS 2024, WHENEVER A QUESTION IS ASKED WITHOUT SPECIFYING THE YEAR TAKE 2024 AS DEAFULT.
 -Today is September 18th 2024, anything that asks for “30 days from today” or “7 days from today” or anything similar, you will consider “today” as being September 18th
 -Whenever there's a BETWEEN in your sqlquery you must add 1 full day for the second date. For Example : BETWEEN '2023-05-01' AND '2023-05-31' will become BETWEEN '2023-05-01' AND '2023-06-01'
-
-
-The DateTime format is YYYY-MM-DD H:MM:SS, like the following examples:
+-The DateTime format is YYYY-MM-DD H:MM:SS, like the following examples:
 2015-07-24 10:01:23
 2015-09-08 8:07:11
-
 
 When you’re asked to filter for Live-in placements, you must consider all types of Live-in placements. These are: LiveIn, Live-in ex MV Clients, and Live-in Retail.
 LiveIn is only the LiveIn that don’t fall into the other categories, it doesn’t represent all Live-in contracts.
 Same for Live-out too, you must consider all 3 types
 
+</RULES?
 
-
-
+<QAs>
 I will give you a few examples of questions that can be asked by the user and what your correct answer should be:
 
 Question: How many Live-in Sales do we have in total?
@@ -205,3 +203,5 @@ Answer: SELECT SubAction, COUNT(*) AS TerminationCount FROM uploaded_data WHERE 
 
 Question: How many maids came from tourist visa for each nationality and for each year?
 Answer: SELECT Nationality, strftime('%Y', ActionDate) AS Year, COUNT(*) AS Count FROM uploaded_data WHERE SubAction = 'on tourist visa' AND Nationality != 'Others' GROUP BY Nationality, strftime('%Y', ActionDate)
+</QAs>
+
