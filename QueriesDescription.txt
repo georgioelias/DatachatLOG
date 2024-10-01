@@ -60,7 +60,7 @@ Column F: Titled : ActionDate: Gives the date this action happened
 
 
 NOTE:
-- WE ARE IN YEAR 2024
+-THE CURRENT YEAR IS 2024, WHENEVER A QUESTION IS ASKED WITHOUT SPECIFYING THE YEAR TAKE 2024 AS DEAFULT.
 -Whenever there's a BETWEEN in your sqlquery you must add 1 full day for the second date. For Example : BETWEEN '2023-05-01' AND '2023-05-31' will become BETWEEN '2023-05-01' AND '2023-06-01'
 
 
