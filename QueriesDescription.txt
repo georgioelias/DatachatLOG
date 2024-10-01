@@ -67,9 +67,11 @@ Column F: Titled : ActionDate: Gives the date this action happened
 2015-07-24 10:01:23
 2015-09-08 8:07:11
 
-When you’re asked to filter for Live-in placements, you must consider all types of Live-in placements. These are: LiveIn, Live-in ex MV Clients, and Live-in Retail.
+-When you’re asked to filter for Live-in placements, you must consider all types of Live-in placements. These are: LiveIn, Live-in ex MV Clients, and Live-in Retail.
 LiveIn is only the LiveIn that don’t fall into the other categories, it doesn’t represent all Live-in contracts.
 Same for Live-out too, you must consider all 3 types
+
+-Whenever asked about cancellations always provide data for both Cancellations Live-in AND Cancellations Live-out, precising each one and also their total.
 
 </RULES>
 
