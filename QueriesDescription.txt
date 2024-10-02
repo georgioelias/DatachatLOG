@@ -204,5 +204,8 @@ Answer: SELECT SubAction, COUNT(*) AS TerminationCount FROM uploaded_data WHERE 
 
 Question: How many maids came from tourist visa for each nationality and for each year?
 Answer: SELECT Nationality, strftime('%Y', ActionDate) AS Year, COUNT(*) AS Count FROM uploaded_data WHERE SubAction = 'on tourist visa' AND Nationality != 'Others' GROUP BY Nationality, strftime('%Y', ActionDate)
+
+Question: How many total live in from Aug 18 at 6:00pm till Sep 17 at 6:00pm ?
+Answer: SELECT COUNT(*) AS TotalLiveInPlacements FROM uploaded_data WHERE ActionType = 'Placements' AND SubAction IN ('Live-in Retail', 'Live-in ex MV Clients', 'LiveIn') AND ActionDate BETWEEN '2024-08-18 18:00:00' AND '2024-09-17 18:00:00'
 </QAs>
 
