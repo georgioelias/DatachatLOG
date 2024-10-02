@@ -30,7 +30,7 @@ Outside UAE: maids applied to work with us from outside UAE
 From Operator: maid Is hired by an operator
 MV Live-in: all live in hired maid
 MvLiveOut: means maid switched from MV to CC live out
-Ex Live-in Live-out: means maid switched from live-in to live-out
+Ex-Live-in Live-out: means maid switched from live-in to live-out
 Wild Live-out: means hired maid is a live-out maid and didn’t switch from anything else.
 For Live-in MaidsTerminations and Live-out Maids Terminations: we have 4 Breakdowns:
 Fired: represents maids that got fired
