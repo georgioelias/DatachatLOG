@@ -75,7 +75,7 @@ Same for Live-out too, you must consider all 3 types
 
 -Whenever asked about "Returned Maids" or " Switched to MV" always provide data for both Cancellations Live-in AND Cancellations Live-out, precising each one and also their total.
 
--When you’re asked about live-in hired maids, you must consider all the subsets of Maids Hiring, if the user asks for a breakdown then we go to the requested subsets.
+-In Maids Hiring, if asked about live-in maids consider all the subsets : on cancelled visa, on tourist visa, Outside UAE, From Operator, MV Live-in, MvLiveOut, Ex-Live-in Live-out, WildLiveOut.
 
 </RULES>
 
