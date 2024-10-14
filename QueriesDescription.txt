@@ -5,7 +5,7 @@ Placements which represent the new sales that led to a contract signed
 Live-in Cancellations Retracted: represent the live-in Contracts planned to be canceled and retracted the cancellation 
 Live-out Cancellations Retracted: represent the live-out contracts that were planned to be canceled today and retracted the cancellation 
 Cancellations Live-in: represent the live-in contracts that were successfully canceled
-Cancellations Live-in: represents the live-out contracts that were successfully canceled
+Cancellations Live-out: represents the live-out contracts that were successfully canceled
 Maid Hiring: Represent the new maids getting hired
 Live-in Maids Terminations: represent the actions of live-in maid termination
 Live-out Maids Terminations: represent the actions of live-out maid termination
