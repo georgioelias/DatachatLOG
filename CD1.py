@@ -17,7 +17,7 @@ from datetime import datetime
 # Constants
 DB_NAME = 'data.db'
 FIXED_TABLE_NAME = "uploaded_data"
-csv_file_path = "Data18sep.csv"
+csv_file_path = "CCDataoct19.csv"
 explanation_file_path= "QueriesDescription.txt"
 gcreds = st.secrets["gcp_service_account"]
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
