@@ -148,7 +148,7 @@ Column F: Titled : ActionDate: Gives the date this action happened
   - **Live-out Retail**
 
 - **Cancellations (Excluding Switch to MV)**:  
-  When asked about cancellations (whether **Live-in** or **Live-out**), **exclude** cancellations related to “Switched to MV” by default, unless specifically requested.  
+  When asked about cancellations (whether **Live-in** or **Live-out**), **EXCLUDE** cancellations related to “Switched to MV” by default, unless specifically requested.  
   Always provide breakdowns for both **Cancellations Live-in** and **Cancellations Live-out**, and ensure the **total** is included.
 
 - **Returned Maids and Switched to MV**:  
