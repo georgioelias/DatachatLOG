@@ -109,18 +109,14 @@ Column E : Titled: ID :
 gives a unique number to the entity mentioned in IDType column 
 
 Column F: Titled : ActionDate: Gives the date this action happened  
+
+Column G: Titled : Reason of Cancellation : Gives the reason behind every cancellation and only applicable for Cancellations Live-in and Cancellations Live-out, ActionTypes.
 </.DATA EXPLANATION>﻿
 
-
-
 <RULES>
+
 - **Default Year**:  
   The current year is **2024**. When a question is asked without specifying the year, assume **2024** by default.
-
-- **Today’s Date**:  
-  Today’s date is **September 18th, 2024**. For any requests referencing “today,” assume it is September 18th, 2024. Examples include: 
-  - “30 days from today” or 
-  - “7 days from today”.
 
 - **SQL Query Date Handling**:  
   When using **BETWEEN** in an SQL query, always add **1 full day** to the second date.  
@@ -148,7 +144,7 @@ Column F: Titled : ActionDate: Gives the date this action happened
   - **Live-out Retail**
 
 - **Cancellations (Excluding Switch to MV)**:  
-  When asked about cancellations (whether **Live-in** or **Live-out**), **EXCLUDE** cancellations related to “Switched to MV” by default, unless specifically requested.  
+  When asked about cancellations (whether **Live-in** or **Live-out**), **exclude** cancellations related to “Switched to MV” by default, unless specifically requested.  
   Always provide breakdowns for both **Cancellations Live-in** and **Cancellations Live-out**, and ensure the **total** is included.
 
 - **Returned Maids and Switched to MV**:  
@@ -164,11 +160,120 @@ Column F: Titled : ActionDate: Gives the date this action happened
   - **Outside UAE**
   - **From Operator**
   - **MV Live-in**
-  - **MvLiveOut**
-  - **Ex-Live-in Live-out**
-  - **WildLiveOut**
+
+- **Switch to MV in Maid Hiring (Equivalent to Ex-Live-in Live-out)**:  
+  When discussing **maid hiring** and asked who switched to MV, this is equivalent to the **Ex-Live-in Live-out** category. There is no correlation with placements, and these two concepts should not be confused.
 
 </RULES>
+
+
+<Instructions for AI Agent>
+
+The following list is a dictionary of technical terms used in the data prompt. For each term, alternative words or phrases that users may use instead of the given technical term are listed. These are grouped under each term to ensure the agent can understand and interpret questions correctly, even if users employ different language or terminology.
+
+<Dictionary Section>
+
+**Placements**:
+- Other terms: Sales, New Sales, Contract Signed, CLIENT SALES
+
+**Live-in Cancellations Retracted**:
+- Other terms: Retention, Termination Retracted
+
+**Live-out Cancellations Retracted**:
+- Other terms: Retention, Termination Retracted
+
+**Cancellations Live-in**:
+- Other terms: Live-in Contract Canceled, Live-in Contract Terminated
+
+**Cancellations Live-out**:
+- Other terms: Live-out Contract Canceled, Live-out Contract Terminated
+
+**Maid Hiring**:
+- Other terms: Maid Recruitment, Maid Employment, Joined, Landed in Dubai, Hired
+
+**Live-in Maids Terminations**:
+- Other terms: Canceled Maids, Attrition
+
+**Live-out Maids Terminations**:
+- Other terms: Canceled Maids, Attrition
+
+**Live-in Retail**:
+- Other terms: Kiosk Sales
+
+**Live-out Retail**:
+- Other terms: Kiosk Sales
+
+**Live-in ex MV Clients**:
+- Other terms: MV Switch to CC Live-in
+
+**Live-out ex MV Clients**:
+- Other terms: MV Switch to CC Live-out
+
+**LiveIn**:
+- Other terms: General Live-in Placements, CC Live-in
+
+**LiveOut**:
+- Other terms: General Live-out Placements, CC Live-out
+
+**Returned Maids**:
+- Other terms: Current Maids
+
+**Switched to MV**:
+- Other terms: Moved to MV Service, Canceled CC Contract to Switch to MV, CC Switch to MV, Converted to MV
+
+**On cancelled visa**:
+- Other terms: (None specified)
+
+**On tourist visa**:
+- Other terms: (None specified)
+
+**Outside UAE**:
+- Other terms: Outside Country (All Countries Outside UAE)
+
+**From Operator**:
+- Other terms: Freedom Operator
+
+**MV Live-in**:
+- Other terms: MV Switched to Live-in, MV Switched to CC Live-in
+
+**MV Live-out**:
+- Other terms: MV Switched to Live-out, MV Switched to CC Live-out
+
+**Ex-Live-in Live-out**:
+- Other terms: Live-in Switch to Live-out
+
+**Wild Live-out**:
+- Other terms: PURE Live-out
+
+**Fired**:
+- Other terms: Terminated, Canceled
+
+**Quit (Absconded)**:
+- Other terms: Left without Notice, Ran Away
+
+**Quit (Non-absconded)**:
+- Other terms: Resigned, Left Voluntarily, Pushed to Resign
+
+**Did not renew**:
+- Other terms: Failed to Renew Contract, Non-renewal
+
+**Filipina**:
+- Other terms: (None specified)
+
+**Ethiopian**:
+- Other terms: (None specified)
+
+**African**:
+- Other terms: Ugandan and Kenyan ONLY
+
+**Others**:
+- Other terms: Other Nationalities, Non-listed Nationalities, All Nationalities Other than Filipina, Ethiopian, and African
+
+**IDType**:
+- Other terms: Type
+</Dictionary Section>
+
+
 
 <QAs>
 I will give you a few examples of questions that can be asked by the user and what your correct answer should be:
