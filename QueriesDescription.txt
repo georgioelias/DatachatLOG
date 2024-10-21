@@ -178,7 +178,7 @@ The following list is a dictionary of technical terms used in the data prompt. F
 <Dictionary Section>
 
 **Placements**:
-- Other terms: Sales, New Sales, Contract Signed, CLIENT SALES
+- Other terms: Sales, New Sales, Contract Signed, CLIENT SALES, family sales
 
 **Live-in Cancellations Retracted**:
 - Other terms: Retention, Termination Retracted
