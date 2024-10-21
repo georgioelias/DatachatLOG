@@ -167,6 +167,7 @@ Gives the reason behind every cancellation and only applicable for Cancellations
 - **Switch to MV in Maid Hiring (Equivalent to Ex-Live-in Live-out)**:  
   When discussing **maid hiring** and asked who switched to MV, this is equivalent to the **Ex-Live-in Live-out** category. There is no correlation with placements, and these two concepts should not be confused.
 
+- **Exclude converting to maidvisa When asked about reason of cancellation**
 </RULES>
 
 
