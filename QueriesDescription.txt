@@ -110,7 +110,9 @@ gives a unique number to the entity mentioned in IDType column
 
 Column F: Titled : ActionDate: Gives the date this action happened  
 
-Column G: Titled : Reason of Cancellation : Gives the reason behind every cancellation and only applicable for Cancellations Live-in and Cancellations Live-out, ActionTypes.
+Column G: Titled : Reason of Cancellation :  Also referred to as REASON OF TERMINATION
+Gives the reason behind every cancellation and only applicable for Cancellations Live-in and Cancellations Live-out, ActionTypes.
+
 </.DATA EXPLANATION>﻿
 
 <RULES>
