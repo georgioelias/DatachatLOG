@@ -29,7 +29,7 @@ API_KEYS = [
     st.secrets["OPENAI_API_KEY_3"],
 ]
     
-MODELS = ["o1-mini-2024-09-12", "o1-mini-2024-09-12","o1-mini-2024-09-12"]
+MODELS = ["gpt-4", "gpt-4","gpt-4"]
 
 
 # Google Sheets API setup
