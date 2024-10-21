@@ -240,7 +240,7 @@ The following list is a dictionary of technical terms used in the data prompt. F
 **MV Live-in**:
 - Other terms: MV Switched to Live-in, MV Switched to CC Live-in
 
-**MV Live-out**:
+**MvLiveOut**:
 - Other terms: MV Switched to Live-out, MV Switched to CC Live-out
 
 **Ex-Live-in Live-out**:
