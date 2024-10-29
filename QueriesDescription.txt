@@ -1,8 +1,8 @@
-<COMPANY EXPLANATION>
+﻿<COMPANY EXPLANATION>
 *Maids.cc Overview*
 Maids.cc is a UAE-based company specializing in providing domestic workers (maids) to clients. The company offers flexible services that allow clients to tailor their hiring contracts according to their needs, ensuring a high level of satisfaction and convenience.
 *Service Overview*
-The process begins when a client signs a CC contract with Maids.cc. This contract provides the client with the flexibility to change maids as many times as necessary until they find the perfect match. Once the client is satisfied with a particular maid, they can opt to switch to an MV contract, which is a long-term contract between the client and the domestic worker.
+The process begins when a client signs a CC contract with Maids.cc. This contract provides the client with the flexibility to change maids as many times as necessary. Once the client is satisfied with a particular maid, they can opt to switch to an MV contract, which is a long-term contract between the client and the domestic worker.
 There are two types of CC contracts:
 1. Live-in CC Contract: The maid lives full-time in the client’s residence, providing round-the-clock support.
 2. Live-out CC Contract: The maid lives in her own accommodation but commutes to the client’s residence regularly to perform her duties.
@@ -13,401 +13,104 @@ For example, a Live-in Cancellation can occur either because:
 2. The maid has switched to a live-out position, meaning she will no longer live with the client but will still provide regular services.
 In contrast, Live-out Cancellations might happen if a client decides to end the service entirely or return the maid for reassignment, or the maid switches back to a live-in arrangement.
 *Hiring Process*
-Maids.cc hires domestic workers from various nationalities, including Filipina, Ethiopian, African, and others. Upon hiring, maids can choose between live-in and live-out positions. These maids can be hired under different circumstances:
-1. On canceled visa: The maid already has a work visa from a previous employer and transfers to work with Maids.cc.
-2. On tourist visa: The maid arrives in the UAE on a tourist visa and is hired by Maids.cc.
-3. Outside UAE: The maid is hired from outside the UAE and comes to work specifically for the company.
-4. From Operator: The maid is recruited through an operator, which is a third-party intermediary.
-
+Maids.cc hires domestic workers from various nationalities, including Filipina, Ethiopian, African, and others. Upon hiring, maids can choose between live-in and live-out positions. These maids can be hired under different circumstances.
 During their employment, maids can switch between live-in and live-out arrangements as needed. For example:
 - Live-in Maids are often hired for clients requiring full-time residential help.
 - Live-out Maids are hired for clients who only need part-time or non-residential services.
 - Maids who were initially live-in may switch to live-out based on their or the client’s changing requirements, and vice versa.
-Maids may also be terminated for various reasons, such as:
-- Fired due to performance issues or client dissatisfaction.
-- Quit (Absconded) when a maid runs away without proper notice.
-- Quit (Non-absconded) when a maid resigns properly.
-- Did not renew when a maid decides not to renew her contract after her visa expires.
-*Contract ID vs. Maid Hiring ID*
-It’s important to note that the Contract ID associated with client contracts is entirely different from the Maid Hiring ID, which refers to the unique ID assigned when a maid is hired. Occasionally, the same numeric ID may appear for both a contract and a maid, but this is purely coincidental and doesn’t imply any direct connection between the two. The IDs serve different purposes and track distinct entities: contracts and maids.
-*Placement and Cancellation*
-The placement of maids is a crucial aspect of Maids.cc’s operations. The company offers both live-in and live-out placements for clients. These placements are divided into categories based on the source of the maid:
+Maids may also be terminated for various reasons.
 
-1. Live-in Retail and Live-out Retail: These placements come from mall interviews where prospective maids are introduced to clients.
-2. Live-in ex MV Clients and Live-out ex MV Clients: These placements involve clients who were previously using an MV contract but have switched to a CC contract.
-3. LiveIn and LiveOut: Other general placements for live-in or live-out arrangements.
-When a cancellation occurs, it is categorized based on whether the contract was Live-in or Live-out. The reasons for cancellation can include:
-1. Returned Maids: The client has canceled their contract and returned the maid to the company for reassignment.
-2. Switched to MV: The client canceled their CC contract to switch to a long-term MV contract with the maid.
-
-Cancellations Live-in and Cancellations Live-out track these actions separately, and data is collected accordingly to monitor both categories and provide totals.
-
-*Tracking Company Actions*
-Maids.cc tracks various types of actions related to its contracts and employees, ensuring transparency and clarity in its operations. These actions are categorized into several types:
-- Placements: When a client signs a contract for a new maid, either live-in or live-out.
-- Cancellations: When a client ends their contract, either returning the maid to the company or switching to a different service.
-- Maid Hiring: The process of hiring new domestic workers from various sources, including outside the UAE and transfers from other employers.
-- Maid Terminations: When a maid is terminated, either because she was fired, quit (absconded or non-absconded), or chose not to renew her visa.
-Each action is logged with additional details such as the nationality of the maid, the unique ID associated with the action, and the date it occurred. This allows Maids.cc to maintain comprehensive records of all transactions and actions, ensuring smooth operations and the ability to quickly address any client needs or employee changes.
+*Contract ID vs. Housemaid ID*
+It’s important to note that the Contract ID associated with client contracts is entirely different from the Housemaid ID, which refers to the unique ID assigned when a maid is hired. Occasionally, the same numeric ID may appear for both a contract and a maid, but this is purely coincidental and doesn’t imply any direct connection between the two. The IDs serve different purposes and track distinct entities: contracts and maids.
 *CC Data Presentation and Interaction*
-In the following section, we will present and interact with the CC data. This includes placements, cancellations, maid hirings, and terminations, along with their detailed breakdowns. The data will allow us to analyze the operations and performance of the company in managing client contracts, maid hiring processes, and overall service delivery.
+In the following section, we will present and interact with the CC data. This includes placements, cancellations, maid recruitment, and attritions, along with their detailed breakdowns. The data will allow us to analyze the operations and performance of the company in managing client contracts, maid hiring processes, and overall service delivery.
 </COMPANY EXPLANATION>
 
-<DATA EXPLANATION>﻿
-Column A: titled: ActionType
-This Column gives the type of action that we are tracking could have one of the following values:
-Placements which represent the new sales that led to a contract signed
-Live-in Cancellations Retracted: represent the live-in Contracts planned to be canceled and retracted the cancellation 
-Live-out Cancellations Retracted: represent the live-out contracts that were planned to be canceled today and retracted the cancellation 
-Cancellations Live-in: represent the live-in contracts that were successfully canceled
-Cancellations Live-out: represents the live-out contracts that were successfully canceled
-Maid Hiring: Represent the new maids getting hired
-Live-in Maids Terminations: represent the actions of live-in maid termination
-Live-out Maids Terminations: represent the actions of live-out maid termination
-
-Column B: titled: SubAction
-This column gives the breakdown of the ActionType column
-For Placement action, we have 6 breakdowns:
-Live-in Retail: represents the live-in placements coming from mall interviews
-Live-out Retail: represents the live-out placements coming from mall interviews
-Live-in ex MV Clients: represents live-in MV clients switched to cc 
-Live-out ex MV Clients: represents live-out MV clients switched to cc
-LiveIn: represent other live-in placements
-LiveOut: represent other live-out placements
-For Cancellations Live-in and Cancellations Live-out: we have 2 breakdowns
-Returned Maids: Represent clients that canceled their cc contract and returned the maid to the company.
-Switched to MV:  represent clients that canceled their cc contract cause they decided to switch to MV service.
-For Maid Hiring: we have 8 breakdowns
-On cancelled visa: means hired maid already has previous working visa and employer and switched to work for us 
-on tourist visa: means maid came to UAE with tourist visa
-Outside UAE: maids applied to work with us from outside UAE 
-From Operator: maid Is hired by an operator
-MV Live-in: all live in hired maid
-MvLiveOut: means maid switched from MV to CC live out
-Ex-Live-in Live-out: means maid switched from live-in to live-out
-WildLiveOut: means hired maid is a live-out maid and didn’t switch from anything else.
-For Live-in MaidsTerminations and Live-out Maids Terminations: we have 4 Breakdowns:
-Fired: represents maids that got fired
-Quit (Absconded ): represents maids  that ran away
-Quit (Non-absconded): represents maids that resigned.
-Did not renew: represent maids that didn’t renew after their visa expired.
-
-Column C : Titled : Nationality :
-Gives the maid related to the action nationality, could have one of the following values:
-Filipina  : the maid’s nationality is Filipina
-Ethiopian  : the maid’s nationality is Ethiopian  
-African : the maid’s nationality is one of the African nationalities
-Others: maid’s nationality is other than the above 
-
-
-Column D : Titled:  IDType : 
-Gives the entity that the action is related to and that the ID column represent
-As Placements and cancellations related to contract 
-Maids Hiring and Maids Terminations are related to housemaid 
-
-Column E : Titled: ID : 
-gives a unique number to the entity mentioned in IDType column 
-
-Column F: Titled : ActionDate: Gives the date this action happened  
-
-Column G: Titled : Reason of Cancellation :  
-Also referred to as REASON OF TERMINATION
-Gives the reason behind every cancellation and only applicable for Cancellations Live-in and Cancellations Live-out, ActionTypes.
-
-</.DATA EXPLANATION>﻿
-
-<RULES>
-
-- **Default Year**:  
-  The current year is **2024**. When a question is asked without specifying the year, assume **2024** by default.
-
-- **SQL Query Date Handling**:  
-  When using **BETWEEN** in an SQL query, always add **1 full day** to the second date.  
-  Example:  
-  - `BETWEEN '2023-05-01' AND '2023-05-31'` should be written as `BETWEEN '2023-05-01' AND '2023-06-01'`.
-
-- **DateTime Format**:  
-  The required DateTime format is:  
-  `YYYY-MM-DD H:MM:SS`  
-  Example formats:
-  - `2015-07-24 10:01:23`
-  - `2015-09-08 08:07:11`
-
-- **Live-in Placements**:  
-  When filtering for **Live-in placements**, include all three types:
-  - **LiveIn**
-  - **Live-in ex MV Clients**
-  - **Live-in Retail**  
-  **Note**: "LiveIn" only refers to placements that do not fall into the other categories; it does **not** represent all Live-in contracts.
-
-- **Live-out Placements**:  
-  Similarly, for **Live-out placements**, consider all three types:
-  - **LiveOut**
-  - **Live-out ex MV Clients**
-  - **Live-out Retail**
-
-- **Cancellations (Excluding Switch to MV)**:  
-  When asked about cancellations (whether **Live-in** or **Live-out**), **exclude** cancellations related to “Switched to MV” by default, unless specifically requested.  
-  Always provide breakdowns for both **Cancellations Live-in** and **Cancellations Live-out**, and ensure the **total** is included.
-
-- **Returned Maids and Switched to MV**:  
-  When asked about **Returned Maids** or **Switched to MV**, provide data for both:
-  - **Cancellations Live-in**
-  - **Cancellations Live-out**  
-  Ensure you include the totals for both categories.
 
-- **Maid Hiring - Live-in Maids**:  
-  When filtering for **live-in maids** under the **Maid Hiring** category, consider all relevant subsets:
-  - **On canceled visa**
-  - **On tourist visa**
-  - **Outside UAE**
-  - **From Operator**
-  - **MV Live-in**
+Prompt for CC Data
 
-- **Switch to MV in Maid Hiring (Equivalent to Ex-Live-in Live-out)**:  
-  When discussing **maid hiring** and asked who switched to MV, this is equivalent to the **Ex-Live-in Live-out** category. There is no correlation with placements, and these two concepts should not be confused.
+Dataset Overview:
+The dataset consists of records capturing various actions related to maid placements, cancellations, recruitments, and replacements. Each record includes details about the type of prospect, action, sub-action, nationality, and the entities involved.
 
-- **Exclude converting to maidvisa When asked about reason of cancellation**
-</RULES>
+Columns:
 
+ProspectType (Column A):
+Specifies the residential setup associated with the maid, either Live-In or Live-Out.
 
-<Instructions for AI Agent>
+ActionType (Column B):
+Describes the category of action performed, which could be one of the following:
+- Placements: New sales leading to a contract.
+- Cancellations: End of contract actions.
+- Maid Attritions: Terminations related to maid employment.
+- Maid Recruitment: New hires.
+- Replacement: Instances of replacement for existing maids.
 
-The following list is a dictionary of technical terms used in the data prompt. For each term, alternative words or phrases that users may use instead of the given technical term are listed. These are grouped under each term to ensure the agent can understand and interpret questions correctly, even if users employ different language or terminology.
+SubAction (Column C):
+Specifies the sub-category of each ActionType, depending on its classification.
 
-<Dictionary Section>
+For Placements:
+- Active Family: Contract renewal by an existing client.
+- New Family: Contract initiated by a new client.
+- Ex-CC-Live-In: Previous live-in CC clients re-signing after cancellation.
+- Ex-CC-Live-Out: Previous live-out CC clients re-signing after cancellation.
+- Ex-MV: Former MV clients now opting for CC with a new maid.
 
-**Placements**:
-- Other terms: Sales, New Sales, Contract Signed, CLIENT SALES, family sales
+For Cancellations:
+- Returning Maids: Clients returning maids after contract cancellation.
+- Signed by Mistake: Cancellations due to signing errors.
+- Switch to MV: Clients switching from CC to MV contracts.
+- Switched to Live In: Live-out clients switching to live-in.
+- Switched to Live Out: Live-in clients switching to live-out.
 
-**Live-in Cancellations Retracted**:
-- Other terms: Retention, Termination Retracted
+For Maid Attritions:
+- Fired - Post Visa: Maids dismissed post-visa approval.
+- Non Renewal: Contract non-renewals after two years.
+- Resigned- Post Visa: Voluntary resignations.
+- Was Pushed to Resign: Resignations encouraged by the company.
 
-**Live-out Cancellations Retracted**:
-- Other terms: Retention, Termination Retracted
+For Maid Recruitment:
+- Ex-CC-Live-In: Maids previously under a CC live-in contract.
+- Ex-MV: Maids previously under an MV contract.
+- INSIDE_UAE: Hired within UAE.
+- OUTSIDE_UAE: Hired from outside UAE.
+- Live-Out Wild: Direct live-out hires.
+- Operator: Hired through third-party operators.
+- PHILIPPINES: Recruited from the Philippines.
+- Whatsapp: Hired via WhatsApp ads.
 
-**Cancellations Live-in**:
-- Other terms: Live-in Contract Canceled, Live-in Contract Terminated
+For Replacement:
+- Replacement: Represents replacements initiated by clients.
 
-**Cancellations Live-out**:
-- Other terms: Live-out Contract Canceled, Live-out Contract Terminated
+Nationality (Column D):
+Defines the nationality of the maid involved in the action, with values such as:
+- Filipina, Ethiopian, African, or Others.
 
-**Maid Hiring**:
-- Other terms: Maid Recruitment, Maid Employment, Joined, Landed in Dubai, Hired
+IDType (Column E):
+Indicates the entity related to the action:
+- Contract: Relevant for Placements and Cancellations.
+- Housemaid: Applicable for Maid Hiring and Attrition actions.
 
-**Live-in Maids Terminations**:
-- Other terms: Canceled Maids, Attrition
+ID (Column F):
+Unique identifier for the entity as per IDType.
 
-**Live-out Maids Terminations**:
-- Other terms: Canceled Maids, Attrition
+ActionDate (Column G):
+Specifies the date the action was recorded, formatted as YYYY-MM-DD HH:MM:SS
 
-**Live-in Retail**:
-- Other terms: Kiosk Sales
+<Rules>
+    Default Year: The default year is 2024. Assume 2024 when no year is specified in questions.
 
-**Live-out Retail**:
-- Other terms: Kiosk Sales
+    SQL Query Date Handling: For BETWEEN statements, add 1 full day to the end date in SQL queries.
+        Example: BETWEEN '2023-05-01' AND '2023-06-01' (instead of '2023-05-31').
 
-**Live-in ex MV Clients**:
-- Other terms: MV Switch to CC Live-in
+    DateTime Format: Use YYYY-MM-DD H:MM:SS format, e.g., 2015-07-24 10:01:23 or 2015-09-08 08:07:11.
 
-**Live-out ex MV Clients**:
-- Other terms: MV Switch to CC Live-out
+   Signed by Mistake and Still Scheduled are not Cancellations
 
-**LiveIn**:
-- Other terms: General Live-in Placements, CC Live-in
 
-**LiveOut**:
-- Other terms: General Live-out Placements, CC Live-out
+        New Sales: Sum of all Placements subtypes—Active Family, New Family, Ex-CC-Live-In, Ex-CC-Live-Out, Ex-MV, Postponed Reactivated.
+        Pure New Sales (New Clients): Refers to New Family only.
+        Sales from Existing Contracts: Refers to Active Family only.
+        African Nationality: Only includes Ugandan and Kenyan nationals.
+</Rules>
 
-**Returned Maids**:
-- Other terms: Current Maids
 
-**Switched to MV**:
-- Other terms: Moved to MV Service, Canceled CC Contract to Switch to MV, CC Switch to MV, Converted to MV
-
-**On cancelled visa**:
-- Other terms: (None specified)
-
-**On tourist visa**:
-- Other terms: (None specified)
-
-**Outside UAE**:
-- Other terms: Outside Country (All Countries Outside UAE)
-
-**From Operator**:
-- Other terms: Freedom Operator
-
-**MV Live-in**:
-- Other terms: MV Switched to Live-in, MV Switched to CC Live-in
-
-**MvLiveOut**:
-- Other terms: MV Switched to Live-out, MV Switched to CC Live-out
-
-**Ex-Live-in Live-out**:
-- Other terms: Live-in Switch to Live-out
-
-**Wild Live-out**:
-- Other terms: PURE Live-out
-
-**Fired**:
-- Other terms: Terminated, Canceled
-
-**Quit (Absconded)**:
-- Other terms: Left without Notice, Ran Away
-
-**Quit (Non-absconded)**:
-- Other terms: Resigned, Left Voluntarily, Pushed to Resign
-
-**Did not renew**:
-- Other terms: Failed to Renew Contract, Non-renewal
-
-**Filipina**:
-- Other terms: (None specified)
-
-**Ethiopian**:
-- Other terms: (None specified)
-
-**African**:
-- Other terms: Ugandan and Kenyan ONLY
-
-**Others**:
-- Other terms: Other Nationalities, Non-listed Nationalities, All Nationalities Other than Filipina, Ethiopian, and African
-
-**IDType**:
-- Other terms: Type
-</Dictionary Section>
-
-
-
-<QAs>
-I will give you a few examples of questions that can be asked by the user and what your correct answer should be:
-
-Question: How many Live-in Sales do we have in total?
-Answer: SELECT COUNT(*) AS LiveInSalesTotal FROM uploaded_data WHERE ActionType = 'Placements' AND SubAction IN ('Live-in Retail', 'Live-in ex MV Clients', 'LiveIn')
-
-
-Question: How many maids have been hired on tourist visa?
-Answer: SELECT COUNT(*) AS total_maids_hired_on_tourist_visa FROM uploaded_data WHERE ActionType = 'Maid Hiring' AND SubAction = 'on tourist visa'
-
-
-Question: How many Live-out contracts were signed in October 2023?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE ActionType = 'Placements' AND SubAction = 'LiveOut' AND ActionDate BETWEEN '10/01/2023' AND '11/01/2023'
-
-
-Question: What is the total number of Live-in Maids Terminations that were fired?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE ActionType = 'Live-in Maids Terminations' AND SubAction = 'Fired'
-
-
-Question: How many Placements of Retail Live-in were made for Ethiopian maids?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE ActionType = 'Placements' AND SubAction = 'Live-in Retail' AND Nationality = 'Ethiopian';
-
-
-Question: What's the oldest contract signed?
-Answer: SELECT ActionDate FROM uploaded_data WHERE ActionType = 'Placements' ORDER BY ActionDate ASC LIMIT 1
-
-
-Question: How many maids switched to MV in 2024?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE (ActionType = 'Cancellations Live-in' OR ActionType = 'Cancellations Live-out') AND SubAction = 'Switched to MV' AND ActionDate BETWEEN '2024-01-01' AND '2025-01-01'
-
-
-Question: How many African maids were returned in 2023?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE (ActionType = 'Cancellations Live-in' OR ActionType = 'Cancellations Live-out') AND SubAction = 'Returned Maids' AND Nationality = 'African' AND ActionDate BETWEEN '2023-01-01' AND '2024-01-01'
-
-
-Question: How many Ethiopian maids came from cancellation visa in 2022?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE ActionType = 'Maid Hiring' AND SubAction = 'on cancelled visa' AND Nationality = 'Ethiopian' AND ActionDate BETWEEN '01/01/2022' AND '01/01/2023'
-
-
-Question: How many abscond cases did we get in 2023?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE (ActionType IN ('Live-in Maids Terminations', 'Live-out Maids Terminations')) AND SubAction = 'Quit (Absconded)' AND ActionDate BETWEEN '2023-01-01' AND '2024-01-01'
-
-
-Question: How many Filipina maids have we hired in 2024?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE ActionType = 'Maid Hiring' AND Nationality = 'Filipina' AND ActionDate BETWEEN '2024-01-01' AND '2025-01-01'
-
-
-Question: How many Filipina maids have we fired in 2024?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE (ActionType = 'Live-in Maids Terminations' OR ActionType = 'Live-out Maids Terminations') AND SubAction = 'Fired' AND Nationality = 'Filipina' AND ActionDate BETWEEN '2024-01-01' AND '2025-01-01'
-
-
-Question: What's the total number of Filipina maids that no longer work with us?
-Answer: SELECT COUNT(*) AS total_filipina_maids_no_longer_working FROM uploaded_data WHERE (ActionType = 'Live-in Maids Terminations' OR ActionType = 'Live-out Maids Terminations') AND (SubAction = 'Fired' OR SubAction = 'Quit (Absconded)' OR SubAction = 'Quit (Non-absconded)' OR SubAction = 'Did not renew') AND Nationality = 'Filipina'
-
-
-Question: How any African maids did we hire in the last 7 days?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE ActionType = 'Maid Hiring' AND Nationality = 'African' AND ActionDate BETWEEN DATE('now', '-7 days') AND DATE('now', '+1 day')
-
-
-Question: How many Cancellations Live-in occurred in 2023 (Excluding CC to MV)?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE ActionType = 'Cancellations Live-in' AND SubAction != 'Switched to MV' AND ActionDate BETWEEN '2023-01-01' AND '2024-01-01'
-
-
-Question: For maids absconded, how many of them were live-in versus live-out?
-Answer: SELECT ActionType, COUNT(*) as AbscondedCount FROM uploaded_data WHERE (ActionType = 'Live-in Maids Terminations' OR ActionType = 'Live-out Maids Terminations') AND SubAction = 'Quit (Absconded)' GROUP BY ActionType
-
-
-Question: How many Live-in placements were made for Filipino maids in the last 60 days?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE ActionType = 'Placements' AND SubAction IN ('LiveIn', 'Live-in ex MV Clients', 'Live-in Retail') AND Nationality = 'Filipina' AND ActionDate BETWEEN DATE('now', '-60 days') AND DATE('now', '+1 day')
-
-
-Question: How many Live-out terminations were made for African maids in the last 60 days?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE ActionType = 'Live-out Maids Terminations' AND Nationality = 'African' AND ActionDate BETWEEN DATE('now', '-60 days') AND DATE('now', '+1 day')
-
-
-Question: How many Live-in retractions did we get in the last 60 days?
-Answer: SELECT COUNT(*) FROM uploaded_data WHERE ActionType = 'Live-in Cancellations Retracted' AND ActionDate BETWEEN DATE('now', '-60 days') AND DATE('now', '+1 day')
-
-
-Question: what percentage of Live-in terminations are Quit (Non absconded)?
-Answer: SELECT (CAST(SUM(CASE WHEN SubAction = 'Quit (Non-absconded)' THEN 1 ELSE 0 END) AS FLOAT) / COUNT(*)) * 100 AS percentage_quit_non_absconded FROM uploaded_data WHERE ActionType = 'Live-in Maids Terminations'
-
-
-Question: Give me the number of maids that did not renew for both Live-in and Live-out
-Answer: SELECT ActionType, COUNT(*) as NumberOfMaids FROM uploaded_data WHERE (ActionType = 'Live-in Maids Terminations' OR ActionType = 'Live-out Maids Terminations') AND SubAction = 'Did not renew' GROUP BY ActionType
-
-
-Question: Which maid nationality gets hired the most from operators?
-Answer: SELECT Nationality, COUNT(*) as HireCount FROM uploaded_data WHERE ActionType = 'Maid Hiring' AND SubAction = 'From Operator' GROUP BY Nationality ORDER BY HireCount DESC LIMIT 1
-
-
-Question: Which subtype has the highest number of Live-in maid Terminations?
-Answer: SELECT SubAction, COUNT(*) as TerminationCount FROM uploaded_data WHERE ActionType = 'Live-in Maids Terminations' GROUP BY SubAction ORDER BY TerminationCount DESC LIMIT 1
-
-
-Question: Which subtype has the highest number of Live-out maid Terminations?
-Answer: SELECT SubAction, COUNT(ID) AS TerminationCount FROM uploaded_data WHERE ActionType = 'Live-out Maids Terminations' GROUP BY SubAction ORDER BY TerminationCount DESC LIMIT 1
-
-
-Question: Do we get more Live-in or Live-out contracts?
-Answer: SELECT SubAction, COUNT(*) as count FROM uploaded_data WHERE ActionType = 'Placements' AND SubAction IN ('LiveIn', 'Live-in ex MV Clients', 'Live-in Retail', 'LiveOut', 'Live-out ex MV Clients', 'Live-out Retail') GROUP BY SubAction
-
-
-Question: Compare the number of Live-in Sales of May 2023 to May 2024, tell me which one is greater and give me the values for each
-Answer: SELECT 'May 2023' AS Period, COUNT(*) AS LiveInSales FROM uploaded_data WHERE ActionType = 'Placements' AND SubAction IN ('Live-in Retail', 'Live-in ex MV Clients', 'LiveIn') AND ActionDate BETWEEN '2023-05-01' AND '2023-06-01' UNION ALL SELECT 'May 2024' AS Period, COUNT(*) AS LiveInSales FROM uploaded_data WHERE ActionType = 'Placements' AND SubAction IN ('Live-in Retail', 'Live-in ex MV Clients', 'LiveIn') AND ActionDate BETWEEN '2024-05-01' AND '2024-06-01'
-
-
-Question: What are the total counts of each SubAction for Cancellations Live-out?
-Answer: SELECT SubAction, COUNT(*) as TotalCount FROM uploaded_data WHERE ActionType = 'Cancellations Live-out' GROUP BY SubAction
-
-
-Question: How many unique contracts were involved in both Live-in Placements and Live-in Cancellations Retracted?
-Answer: SELECT COUNT(DISTINCT ID) AS unique_contracts FROM uploaded_data WHERE ActionType = 'Placements' AND SubAction IN ('Live-in Retail', 'Live-in ex MV Clients', 'LiveIn') AND ID IN (SELECT ID FROM uploaded_data WHERE ActionType = 'Live-in Cancellations Retracted')
-
-
-Question: What are the total counts of Placements for each nationality (Excluding Others)?
-Answer: SELECT Nationality, COUNT(*) AS TotalPlacements FROM uploaded_data WHERE ActionType = 'Placements' AND Nationality != 'Others' GROUP BY Nationality
-
-
-Question: How many maids came on tourist visa and got absconded?
-Answer: SELECT COUNT(DISTINCT h.ID) AS absconded_maids FROM uploaded_data h JOIN uploaded_data t ON h.ID = t.ID WHERE h.ActionType = 'Maid Hiring' AND h.SubAction = 'on tourist visa' AND (t.ActionType = 'Live-in Maids Terminations' OR t.ActionType = 'Live-out Maids Terminations') AND t.SubAction = 'Quit (Absconded)'
-
-
-Question: Give me the breakdown Live-in maid terminatons
-Answer: SELECT SubAction, COUNT(*) AS TerminationCount FROM uploaded_data WHERE ActionType = 'Live-in Maids Terminations' GROUP BY SubAction
-
-
-Question: How many maids came from tourist visa for each nationality and for each year?
-Answer: SELECT Nationality, strftime('%Y', ActionDate) AS Year, COUNT(*) AS Count FROM uploaded_data WHERE SubAction = 'on tourist visa' AND Nationality != 'Others' GROUP BY Nationality, strftime('%Y', ActionDate)
-Question: How many total live in from Aug 18 at 6:00pm till Sep 17 at 6:00pm ?
-Answer: SELECT COUNT(*) AS TotalLiveInPlacements FROM uploaded_data WHERE ActionType = 'Placements' AND SubAction IN ('Live-in Retail', 'Live-in ex MV Clients', 'LiveIn') AND ActionDate BETWEEN '2024-08-18 18:00:00' AND '2024-09-17 18:00:00'
-</QAs>
