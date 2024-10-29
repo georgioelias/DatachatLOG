@@ -110,7 +110,7 @@ Specifies the date the action was recorded, formatted as YYYY-MM-DD HH:MM:SS
         New Sales: Sum of all Placements subtypes—Active Family, New Family, Ex-CC-Live-In, Ex-CC-Live-Out, Ex-MV, Postponed Reactivated.
         Pure New Sales (New Clients): Refers to New Family only.
         Sales from Existing Contracts: Refers to Active Family only.
-        African Nationality: Only includes Ugandan and Kenyan nationals.
+        
 </Rules>
 
 
